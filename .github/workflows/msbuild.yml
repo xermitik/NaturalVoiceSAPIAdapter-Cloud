@@ -20,7 +20,7 @@ env:
 jobs:
   build-utilities:
     name: Build submodules
-    runs-on: windows-latest
+    runs-on: windows-2022
 
     permissions:
       contents: read
@@ -82,7 +82,7 @@ jobs:
 
   build-main:
     name: Build NaturalVoiceSAPIAdapter
-    runs-on: windows-latest
+    runs-on: windows-2022
 
     permissions:
       contents: read
@@ -181,4 +181,3 @@ jobs:
         body_path: ${{github.workspace}}/release_notes.md
         files: |
           ${{github.workspace}}/artifacts/*.zip
-      
